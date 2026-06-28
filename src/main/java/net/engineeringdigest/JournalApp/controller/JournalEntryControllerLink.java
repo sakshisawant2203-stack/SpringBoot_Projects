@@ -64,6 +64,7 @@ public class JournalEntryControllerLink {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+
     @PutMapping("id/{username}/{myid}")
     public ResponseEntity<?> updateJournalById(@PathVariable ObjectId myid,
                                                @RequestBody JournalEntry newEntry,
